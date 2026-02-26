@@ -1,4 +1,4 @@
-package ro.ase.cts.clase;
+package cts.clase;
 
 import java.util.Arrays;
 

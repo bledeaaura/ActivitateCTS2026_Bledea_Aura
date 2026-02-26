@@ -1,7 +1,7 @@
-package ro.ase.cts.main;
+package cts.main;
 
-import ro.ase.cts.clase.Angajat;
-import ro.ase.cts.clase.Utils;
+import cts.clase.Angajat;
+import cts.clase.Utils;
 
 import java.io.FileNotFoundException;
 import java.util.List;
