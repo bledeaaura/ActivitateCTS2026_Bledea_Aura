@@ -10,12 +10,16 @@ import java.util.List;
 public class Program {
 
 	public static void main(String[] args) {
+		Angajat.setValoareFinantareAngajat(50);
 		List<Aplicant> listaAngajati;
 		try {
-			AngajatReader angajatReader = new AngajatReader();
-			listaAngajati = angajatReader.readAplicanti("angajati.txt");
-			for(Aplicant angajat:listaAngajati)
+			AngajatReader angajatReader = new AngajatReader("angajati.txt");
+			listaAngajati = angajatReader.readAplicanti();
+			for(Aplicant angajat:listaAngajati) {
 				System.out.println(angajat.toString());
+				angajat.afiseazaFinantare();
+				angajat.afiseazaStatut();
+			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
