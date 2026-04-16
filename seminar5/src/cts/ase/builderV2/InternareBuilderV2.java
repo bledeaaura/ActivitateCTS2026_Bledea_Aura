@@ -16,13 +16,6 @@ public class InternareBuilderV2 implements AbstractBuilderV2 {
         this.papuciCamera = false;
         this.halatInterior = false;
     }
-//
-//    @Override
-//    public Internare build(String nume) {
-//        return new Internare(nume, patRabatabil, papuciCamera, halatInterior, micDejun);
-//    }
-
-
 
     @Override
     public Internare build(String nume) {
